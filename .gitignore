@@ -5,7 +5,6 @@
 /.pnp
 .pnp.js
 /public
-/README.md
 ./setupTests.js
 ./reportWebVitals.js
 

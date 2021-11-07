@@ -1,6 +1,6 @@
 /*
-    This file is contains the calender and points from the current F1 season
-    Changes made here will be used in the Schedule.js and Scoreboard.js files
+    This file contains the calender and points from the current F1 season
+    Changes made here will be used in Schedule.js and Scoreboard.js files
 */
 
 const formula = {

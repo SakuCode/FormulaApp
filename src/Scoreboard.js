@@ -45,7 +45,7 @@ export default function Selectscore() {
 
 
   return (
-    <div sx={{outerHeight: 200}}>
+    <div>
       <Box sx={{ maxWidth: 120 }} style={{paddingBottom: 5}}>
         <FormControl fullWidth >
           <InputLabel >Select</InputLabel>
