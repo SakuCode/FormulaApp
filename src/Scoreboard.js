@@ -98,90 +98,92 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 
   const teamrows = [
     //Mercedes
-    teamData(formula.leaderboard[0].id, formula.leaderboard[0].name, formula.leaderboard[0].points),
+    teamData(1, formula.leaderboard[0].name, formula.leaderboard[0].points),
     //Red Bull
-    teamData(formula.leaderboard[1].id, formula.leaderboard[1].name, formula.leaderboard[1].points),
-    //Mclaren
-    teamData(formula.leaderboard[2].id, formula.leaderboard[2].name, formula.leaderboard[2].points),
+    teamData(2, formula.leaderboard[1].name, formula.leaderboard[1].points),
     //Ferrari
-    teamData(formula.leaderboard[5].id, formula.leaderboard[5].name, formula.leaderboard[5].points),
+    teamData(3, formula.leaderboard[5].name, formula.leaderboard[5].points),
+    //Mclaren
+    teamData(4, formula.leaderboard[2].name, formula.leaderboard[2].points),
     //Alpine
-    teamData(formula.leaderboard[4].id, formula.leaderboard[4].name, formula.leaderboard[4].points),
+    teamData(5, formula.leaderboard[4].name, formula.leaderboard[4].points),
     //Alphatauri
-    teamData(formula.leaderboard[6].id, formula.leaderboard[6].name, formula.leaderboard[6].points),
+    teamData(6, formula.leaderboard[6].name, formula.leaderboard[6].points),
     //Aston Martin
-    teamData(formula.leaderboard[3].id, formula.leaderboard[3].name, formula.leaderboard[3].points),
+    teamData(7, formula.leaderboard[3].name, formula.leaderboard[3].points),
     //Williams
-    teamData(formula.leaderboard[9].id, formula.leaderboard[9].name, formula.leaderboard[9].points),
+    teamData(8, formula.leaderboard[9].name, formula.leaderboard[9].points),
     //Alfa Romeo
-    teamData(formula.leaderboard[7].id, formula.leaderboard[7].name, formula.leaderboard[7].points),
+    teamData(9, formula.leaderboard[7].name, formula.leaderboard[7].points),
     //Haas
-    teamData(formula.leaderboard[8].id, formula.leaderboard[8].name, formula.leaderboard[8].points)
+    teamData(10, formula.leaderboard[8].name, formula.leaderboard[8].points)
   ];
   
   const driverrows = [
+    //Position, Name, Nationality, Team, Points
+
     //Max Verstappen
-    createData(formula.leaderboard[1].driverone[0].position, formula.leaderboard[1].driverone[0].name, formula.leaderboard[1].driverone[0].nationality,
+    createData(1, formula.leaderboard[1].driverone[0].name, formula.leaderboard[1].driverone[0].nationality,
          formula.leaderboard[1].name, formula.leaderboard[1].driverone[0].points),
     //Lewis Hamilton
-    createData(formula.leaderboard[0].driverone[0].position, formula.leaderboard[0].driverone[0].name, formula.leaderboard[0].driverone[0].nationality,
+    createData(2, formula.leaderboard[0].driverone[0].name, formula.leaderboard[0].driverone[0].nationality,
          formula.leaderboard[0].name, formula.leaderboard[0].driverone[0].points),  
     //Valtteri Bottas
-    createData(formula.leaderboard[0].drivertwo[0].position, formula.leaderboard[0].drivertwo[0].name, formula.leaderboard[0].drivertwo[0].nationality,
+    createData(3, formula.leaderboard[0].drivertwo[0].name, formula.leaderboard[0].drivertwo[0].nationality,
          formula.leaderboard[0].name, formula.leaderboard[0].drivertwo[0].points),
     //Sergio Perez
-    createData(formula.leaderboard[1].drivertwo[0].position, formula.leaderboard[1].drivertwo[0].name, formula.leaderboard[1].drivertwo[0].nationality,
+    createData(4, formula.leaderboard[1].drivertwo[0].name, formula.leaderboard[1].drivertwo[0].nationality,
       formula.leaderboard[1].name, formula.leaderboard[1].drivertwo[0].points),
     //Lando Norris
-    createData(formula.leaderboard[2].drivertwo[0].position, formula.leaderboard[2].drivertwo[0].name, formula.leaderboard[2].drivertwo[0].nationality,
+    createData(5, formula.leaderboard[2].drivertwo[0].name, formula.leaderboard[2].drivertwo[0].nationality,
         formula.leaderboard[2].name, formula.leaderboard[2].drivertwo[0].points),
     //Charles Leclerc
-    createData(formula.leaderboard[5].driverone[0].position, formula.leaderboard[5].driverone[0].name, formula.leaderboard[5].driverone[0].nationality,
+    createData(6, formula.leaderboard[5].driverone[0].name, formula.leaderboard[5].driverone[0].nationality,
         formula.leaderboard[5].name, formula.leaderboard[5].driverone[0].points),
     //Carlos Saintz
-    createData(formula.leaderboard[5].drivertwo[0].position, formula.leaderboard[5].drivertwo[0].name, formula.leaderboard[5].drivertwo[0].nationality,
+    createData(7, formula.leaderboard[5].drivertwo[0].name, formula.leaderboard[5].drivertwo[0].nationality,
       formula.leaderboard[5].name, formula.leaderboard[5].drivertwo[0].points),
     //Daniel Ricciardo
-    createData(formula.leaderboard[2].driverone[0].position, formula.leaderboard[2].driverone[0].name, formula.leaderboard[2].driverone[0].nationality,
+    createData(8, formula.leaderboard[2].driverone[0].name, formula.leaderboard[2].driverone[0].nationality,
         formula.leaderboard[2].name, formula.leaderboard[2].driverone[0].points),
     //Pierre Gasly
-    createData(formula.leaderboard[6].driverone[0].position, formula.leaderboard[6].driverone[0].name, formula.leaderboard[6].driverone[0].nationality,
+    createData(9, formula.leaderboard[6].driverone[0].name, formula.leaderboard[6].driverone[0].nationality,
         formula.leaderboard[6].name, formula.leaderboard[6].driverone[0].points),
     //Fernando Alonso
-    createData(formula.leaderboard[4].driverone[0].position, formula.leaderboard[4].driverone[0].name, formula.leaderboard[4].driverone[0].nationality,
+    createData(10, formula.leaderboard[4].driverone[0].name, formula.leaderboard[4].driverone[0].nationality,
         formula.leaderboard[4].name, formula.leaderboard[4].driverone[0].points),
     //Esteban Ocon
-    createData(formula.leaderboard[4].drivertwo[0].position, formula.leaderboard[4].drivertwo[0].name, formula.leaderboard[4].drivertwo[0].nationality,
+    createData(11, formula.leaderboard[4].drivertwo[0].name, formula.leaderboard[4].drivertwo[0].nationality,
         formula.leaderboard[4].name, formula.leaderboard[4].drivertwo[0].points),
     //Sebastian Vettel
-    createData(formula.leaderboard[3].driverone[0].position, formula.leaderboard[3].driverone[0].name, formula.leaderboard[3].driverone[0].nationality,
+    createData(12, formula.leaderboard[3].driverone[0].name, formula.leaderboard[3].driverone[0].nationality,
         formula.leaderboard[3].name, formula.leaderboard[3].driverone[0].points),
     //Lance Stroll
-    createData(formula.leaderboard[3].drivertwo[0].position, formula.leaderboard[3].drivertwo[0].name, formula.leaderboard[3].drivertwo[0].nationality,
+    createData(13, formula.leaderboard[3].drivertwo[0].name, formula.leaderboard[3].drivertwo[0].nationality,
         formula.leaderboard[3].name, formula.leaderboard[3].drivertwo[0].points),
     //Yuki Tsunoda
-    createData(formula.leaderboard[6].drivertwo[0].position, formula.leaderboard[6].drivertwo[0].name, formula.leaderboard[6].drivertwo[0].nationality,
+    createData(14, formula.leaderboard[6].drivertwo[0].name, formula.leaderboard[6].drivertwo[0].nationality,
         formula.leaderboard[6].name, formula.leaderboard[6].drivertwo[0].points),
     //George Russell
-    createData(formula.leaderboard[9].driverone[0].position, formula.leaderboard[9].driverone[0].name, formula.leaderboard[9].driverone[0].nationality,
+    createData(15, formula.leaderboard[9].driverone[0].name, formula.leaderboard[9].driverone[0].nationality,
         formula.leaderboard[9].name, formula.leaderboard[9].driverone[0].points),
-    //Nicholas Latifi
-    createData(formula.leaderboard[9].drivertwo[0].position, formula.leaderboard[9].drivertwo[0].name, formula.leaderboard[9].drivertwo[0].nationality,
-        formula.leaderboard[9].name, formula.leaderboard[9].drivertwo[0].points),
     //Kimi Räikkönen
-    createData(formula.leaderboard[7].driverone[0].position, formula.leaderboard[7].driverone[0].name, formula.leaderboard[7].driverone[0].nationality,
-        formula.leaderboard[7].name, formula.leaderboard[7].driverone[0].points),
+    createData(16, formula.leaderboard[7].driverone[0].name, formula.leaderboard[7].driverone[0].nationality,
+      formula.leaderboard[7].name, formula.leaderboard[7].driverone[0].points),
+    //Nicholas Latifi
+    createData(17, formula.leaderboard[9].drivertwo[0].name, formula.leaderboard[9].drivertwo[0].nationality,
+        formula.leaderboard[9].name, formula.leaderboard[9].drivertwo[0].points),
     //Antonio Giovinazzi
-    createData(formula.leaderboard[7].drivertwo[0].position, formula.leaderboard[7].drivertwo[0].name, formula.leaderboard[7].drivertwo[0].nationality,
+    createData(18, formula.leaderboard[7].drivertwo[0].name, formula.leaderboard[7].drivertwo[0].nationality,
         formula.leaderboard[7].name, formula.leaderboard[7].drivertwo[0].points),
     //Mick Schumacher
-    createData(formula.leaderboard[8].driverone[0].position, formula.leaderboard[8].driverone[0].name, formula.leaderboard[8].driverone[0].nationality,
+    createData(19, formula.leaderboard[8].driverone[0].name, formula.leaderboard[8].driverone[0].nationality,
         formula.leaderboard[8].name, formula.leaderboard[8].driverone[0].points),
     //Robert Kubica
-    createData(formula.leaderboard[7].driverthree[0].position, formula.leaderboard[7].driverthree[0].name, formula.leaderboard[7].driverthree[0].nationality,
+    createData(20, formula.leaderboard[7].driverthree[0].name, formula.leaderboard[7].driverthree[0].nationality,
         formula.leaderboard[7].name, formula.leaderboard[7].driverthree[0].points),
     //Nikita Mazepin
-    createData(formula.leaderboard[8].drivertwo[0].position, formula.leaderboard[8].drivertwo[0].name, formula.leaderboard[8].drivertwo[0].nationality,
+    createData(21, formula.leaderboard[8].drivertwo[0].name, formula.leaderboard[8].drivertwo[0].nationality,
         formula.leaderboard[8].name, formula.leaderboard[8].drivertwo[0].points),
   ];
   

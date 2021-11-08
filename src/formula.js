@@ -129,14 +129,14 @@ const formula = {
         country: 'Mexico',
         circuit: 'Autodromo Hermanos Rodriguez',
         date: 'Nov 5-7',
-        status: 'next',
+        status: 'finished',
         id: 18
       },
       {
         country: 'Brazil',
         circuit: 'Interlagos',
         date: 'Nov 12-14',
-        status: 'upcoming',
+        status: 'next',
         id: 19
       },
       {
@@ -166,13 +166,13 @@ const formula = {
         {
             id: 1,
             name: 'Mercedes',
-            points: 460.5,
+            points: 478.5,
             driverone: [
                 {
                     position: 2,
                     name: 'Lewis Hamilton',
                     nationality: 'GBR',
-                    points: 275.5
+                    points: 293.5
                 }
             ],
             drivertwo: [
@@ -187,13 +187,13 @@ const formula = {
         {
             id: 2,
             name: 'Red Bull Racing Honda',
-            points: 437.5,
+            points: 477.5,
             driverone: [
                 {
                     position: 1,
                     name: 'Max Verstappen',
                     nationality: 'NED',
-                    points: 287.5
+                    points: 312.5
                 }
             ],
             drivertwo: [
@@ -201,14 +201,14 @@ const formula = {
                     position: 5,
                     name: 'Sergio Perez',
                     nationality: 'MEX',
-                    points: 150
+                    points: 165
                 }
             ]
         },
         {
-            id: 3,
+            id: 4,
             name: 'Mclaren Mercedes',
-            points: 254,
+            points: 255,
             driverone: [
                 {
                     position: 8,
@@ -222,20 +222,20 @@ const formula = {
                     position: 4,
                     name: 'Lando Norris',
                     nationality: 'GBR',
-                    points: 149
+                    points: 150
                 }
             ]
         },
         {
             id: 7,
             name: 'Aston Martin Mercedes',
-            points: 62,
+            points: 68,
             driverone: [
                 {
                     position: 12,
                     name: 'Sebastian Vettel',
                     nationality: 'GER',
-                    points: 36
+                    points: 42
                 }
             ],
             drivertwo: [
@@ -250,13 +250,13 @@ const formula = {
         {
             id: 5,
             name: 'Alpine Renault',
-            points: 104,
+            points: 106,
             driverone: [
                 {
                     position: 10,
                     name: 'Fernando Alonso',
                     nationality: 'ESP',
-                    points: 58
+                    points: 60
                 }
             ],
             drivertwo: [
@@ -269,15 +269,15 @@ const formula = {
             ]
         },
         {
-            id: 4,
+            id: 3,
             name: 'Ferrari',
-            points: 250.5,
+            points: 268.5,
             driverone: [
                 {
                     position: 7,
                     name: 'Charles Leclerc',
                     nationality: 'MON',
-                    points: 128
+                    points: 138
                 }
             ],
             drivertwo: [
@@ -285,20 +285,20 @@ const formula = {
                     position: 6,
                     name: 'Carlos Sainz',
                     nationality: 'ESP',
-                    points: 122.5
+                    points: 130.5
                 }
             ]
         },
         {
             id: 6,
             name: 'Alphatauri Honda',
-            points: 94,
+            points: 106,
             driverone: [
                 {
                     position: 9,
                     name: 'Pierre Gasly',
                     nationality: 'FRA',
-                    points: 74
+                    points: 86
                 }
             ],
             drivertwo: [
@@ -313,13 +313,13 @@ const formula = {
         {
             id: 9,
             name: 'Alfa Romeo Racing Ferrari',
-            points: 7,
+            points: 11,
             driverone: [
                 {
                     position: 17,
                     name: 'Kimi Räikkönen',
                     nationality: 'FIN',
-                    points: 6
+                    points: 10
                 }
             ],
             drivertwo: [
