@@ -1,6 +1,6 @@
 # Formula 1 App
 
-This app contains the current standing information from Formula 1
+This app contains the current standing information from Formula 1. App is done using React with the Material UI component library.
 The information must be updated manually since it is not using any API that contains the information.
 (Early version of the app)
 
