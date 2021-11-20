@@ -94,10 +94,12 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     //Qatar
     createData(formula.circuits[19].id,formula.circuits[19].country,formula.circuits[19].circuit,
         formula.circuits[19].date,formula.circuits[19].status),
-    //Abu Dhabi
+    //Saudi Arabia
     createData(formula.circuits[20].id,formula.circuits[20].country,formula.circuits[20].circuit,
         formula.circuits[20].date,formula.circuits[20].status),
-    
+    //Abu Dhabi
+    createData(formula.circuits[21].id,formula.circuits[21].country,formula.circuits[21].circuit,
+        formula.circuits[21].date,formula.circuits[21].status),
   ];
   
   export default function Schedule() {

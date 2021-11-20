@@ -136,14 +136,14 @@ const formula = {
         country: 'Brazil',
         circuit: 'Interlagos',
         date: 'Nov 12-14',
-        status: 'next',
+        status: 'finished',
         id: 19
       },
       {
         country: 'Qatar',
         circuit: 'Losail International Circuit',
         date: 'Nov 19-21',
-        status: 'upcoming',
+        status: 'next',
         id: 20
       },
       {
@@ -166,13 +166,13 @@ const formula = {
         {
             id: 1,
             name: 'Mercedes',
-            points: 478.5,
+            points: 521.5,
             driverone: [
                 {
                     position: 2,
                     name: 'Lewis Hamilton',
                     nationality: 'GBR',
-                    points: 293.5
+                    points: 318.5
                 }
             ],
             drivertwo: [
@@ -180,20 +180,20 @@ const formula = {
                     position: 3,
                     name: 'Valtteri Bottas',
                     nationality: 'FIN',
-                    points: 185
+                    points: 203
                 }
             ]
         },
         {
             id: 2,
             name: 'Red Bull Racing Honda',
-            points: 477.5,
+            points: 510.5,
             driverone: [
                 {
                     position: 1,
                     name: 'Max Verstappen',
                     nationality: 'NED',
-                    points: 312.5
+                    points: 332.5
                 }
             ],
             drivertwo: [
@@ -201,14 +201,14 @@ const formula = {
                     position: 5,
                     name: 'Sergio Perez',
                     nationality: 'MEX',
-                    points: 165
+                    points: 178
                 }
             ]
         },
         {
             id: 4,
             name: 'Mclaren Mercedes',
-            points: 255,
+            points: 256,
             driverone: [
                 {
                     position: 8,
@@ -222,7 +222,7 @@ const formula = {
                     position: 4,
                     name: 'Lando Norris',
                     nationality: 'GBR',
-                    points: 150
+                    points: 151
                 }
             ]
         },
@@ -250,13 +250,13 @@ const formula = {
         {
             id: 5,
             name: 'Alpine Renault',
-            points: 106,
+            points: 112,
             driverone: [
                 {
                     position: 10,
                     name: 'Fernando Alonso',
                     nationality: 'ESP',
-                    points: 60
+                    points: 62
                 }
             ],
             drivertwo: [
@@ -264,20 +264,20 @@ const formula = {
                     position: 11,
                     name: 'Esteban Ocon',
                     nationality: 'FRA',
-                    points: 46
+                    points: 50
                 }
             ]
         },
         {
             id: 3,
             name: 'Ferrari',
-            points: 268.5,
+            points: 287.5,
             driverone: [
                 {
                     position: 7,
                     name: 'Charles Leclerc',
                     nationality: 'MON',
-                    points: 138
+                    points: 148
                 }
             ],
             drivertwo: [
@@ -285,20 +285,20 @@ const formula = {
                     position: 6,
                     name: 'Carlos Sainz',
                     nationality: 'ESP',
-                    points: 130.5
+                    points: 139.5
                 }
             ]
         },
         {
             id: 6,
             name: 'Alphatauri Honda',
-            points: 106,
+            points: 112,
             driverone: [
                 {
                     position: 9,
                     name: 'Pierre Gasly',
                     nationality: 'FRA',
-                    points: 86
+                    points: 92
                 }
             ],
             drivertwo: [
