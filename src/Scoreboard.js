@@ -134,15 +134,15 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     //Sergio Perez
     createData(4, formula.leaderboard[1].drivertwo[0].name, formula.leaderboard[1].drivertwo[0].nationality,
       formula.leaderboard[1].name, formula.leaderboard[1].drivertwo[0].points),
+    //Carlos Saintz
+    createData(7, formula.leaderboard[5].drivertwo[0].name, formula.leaderboard[5].drivertwo[0].nationality,
+      formula.leaderboard[5].name, formula.leaderboard[5].drivertwo[0].points),
     //Lando Norris
     createData(5, formula.leaderboard[2].drivertwo[0].name, formula.leaderboard[2].drivertwo[0].nationality,
         formula.leaderboard[2].name, formula.leaderboard[2].drivertwo[0].points),
     //Charles Leclerc
     createData(6, formula.leaderboard[5].driverone[0].name, formula.leaderboard[5].driverone[0].nationality,
         formula.leaderboard[5].name, formula.leaderboard[5].driverone[0].points),
-    //Carlos Saintz
-    createData(7, formula.leaderboard[5].drivertwo[0].name, formula.leaderboard[5].drivertwo[0].nationality,
-      formula.leaderboard[5].name, formula.leaderboard[5].drivertwo[0].points),
     //Daniel Ricciardo
     createData(8, formula.leaderboard[2].driverone[0].name, formula.leaderboard[2].driverone[0].nationality,
         formula.leaderboard[2].name, formula.leaderboard[2].driverone[0].points),
