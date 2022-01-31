@@ -9,13 +9,13 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
 
-function Schedule () {
+function TeamScoreBoard () {
 
   useEffect(() => {
-    fetchSchedule();
+    fetchScoreBoard();
   } , [] );
 
-  const [circuits, setCircuits] = useState([]);
+  const [teams, setTeams] = useState([]);
 
   const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -37,20 +37,20 @@ function Schedule () {
     },
   }));
 
-  const fetchSchedule = async () => {
+  const fetchScoreBoard = async () => {
 
     var axios = require('axios');
 
     var config = {
       method: 'get',
-      url: 'http://ergast.com/api/f1/current.json',
+      url: 'https://ergast.com/api/f1/current/constructorStandings.json',
       headers: { }
     };
 
     axios(config)
       .then(function (response) {
       console.log(response.data);
-      setCircuits(response.data.MRData.RaceTable.Races);
+      setTeams(response.data.MRData.StandingsTable.StandingsLists[0].ConstructorStandings);
       })
     .catch(function (error) {
       console.log(error);
@@ -62,19 +62,19 @@ function Schedule () {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Number</StyledTableCell>
-            <StyledTableCell>Race Name</StyledTableCell>
-            <StyledTableCell>Country</StyledTableCell>
-            <StyledTableCell>Date</StyledTableCell>
+            <StyledTableCell>Position</StyledTableCell>
+            <StyledTableCell>Constructor</StyledTableCell>
+            <StyledTableCell>Nationality</StyledTableCell>
+            <StyledTableCell>Points</StyledTableCell>
           </TableRow>
         </TableHead>
       <TableBody>
-      {circuits.map(circuit => (
-          <StyledTableRow key={circuit.round}>
-              <StyledTableCell >{circuit.round}</StyledTableCell>
-              <StyledTableCell >{circuit.raceName}</StyledTableCell>
-              <StyledTableCell >{circuit.Circuit.Location.country}</StyledTableCell>
-              <StyledTableCell >{circuit.date}</StyledTableCell>
+      {teams.map(team => (
+          <StyledTableRow key={team.position}>
+              <StyledTableCell >{team.position}</StyledTableCell>
+              <StyledTableCell >{team.Constructor.name}</StyledTableCell>
+              <StyledTableCell >{team.Constructor.nationality}</StyledTableCell>
+              <StyledTableCell >{team.points}</StyledTableCell>
           </StyledTableRow>
           ))}
         </TableBody>
@@ -83,4 +83,4 @@ function Schedule () {
   );
 }
 
-  export default Schedule;
+  export default TeamScoreBoard;

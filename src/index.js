@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import stya from './styles.css'
-import Selectscore from './Scoreboard'
+import ScoreBoard from './Scoreboard'
 import H from './header'
 import Schedule from './Schedule'
 import Box from '@mui/material/Box';
@@ -48,7 +48,7 @@ import Countdown from 'react-countdown';
               <Schedule />
           </TabPanel>
           <TabPanel value="3">
-            <Selectscore />
+            <ScoreBoard />
           </TabPanel>
         </TabContext>
       </Box>
