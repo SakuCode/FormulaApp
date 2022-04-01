@@ -7,10 +7,6 @@
 
 .navbar {
   max-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  margin-bottom: 2%;
   background: linear-gradient(to bottom, rgba(255, 136, 0, 0.459), transparent);
 }
 
