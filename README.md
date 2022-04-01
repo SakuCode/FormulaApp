@@ -1,10 +1,3 @@
 # Formula 1 App
 
-This app contains the current standing information from Formula 1. App is done using React with the Material UI component library.
-The information must be updated manually since it is not using any API that contains the information.
-(Early version of the app)
-
-To update the information:
-1. formula.js has the vital information of the current status
-2. The scoreboard position must be changed in the scoreboard.js
-3. Countdown can to next race is in the index.js Tabpanel Box
+This React app contains the current standing information from Formula 1. It is a simple site where the Scoreboard, Calender and countdown the the next race. App is done using React with the Material UI component library. The information comes from Ergast API. 

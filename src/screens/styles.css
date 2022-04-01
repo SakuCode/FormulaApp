@@ -1,0 +1,86 @@
+.leaderboards {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  max-width: 80vw;
+  height: 100vh;
+}
+
+.home {
+  height: 100vh;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 40vh;
+  transform: translateY(-20px);
+  animation: fade-in-right 2s ease forwards;
+  opacity: 0;
+}
+
+.countdown:hover,
+.countdown:focus {
+  animation: fade-in-right 2s ease forwards;
+  opacity: 0;
+}
+
+.buttondiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 10px;
+  width: 160px;
+  height: 50px;
+  transition: 1s ease;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 15px;
+}
+
+@keyframes fade-in {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .countdown h1 {
+    font-size: 60px;
+  }
+
+  .countdown h3 {
+    font-size: 20px;
+  }
+
+  .selectbox h2 {
+    font-size: 30px;
+  }
+}

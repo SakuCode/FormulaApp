@@ -1,0 +1,6 @@
+.root {
+  background-image: linear-gradient(rgb(255, 196, 108), transparent),
+    url("./images/lecrus.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

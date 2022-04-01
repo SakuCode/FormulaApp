@@ -1,0 +1,64 @@
+@import "../../index.css";
+
+.linkstyle {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.navbar {
+  max-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 2%;
+  background: linear-gradient(to bottom, rgba(255, 136, 0, 0.459), transparent);
+}
+
+.linknav {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bb {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s ease;
+}
+
+.bb:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+  color: rgb(255, 255, 255);
+}
+
+#logo {
+  width: 700px;
+}
+#logo path:nth-child(1) {
+  stroke-dasharray: 550px;
+  stroke-dashoffset: 550px;
+  animation: line-anim 3s ease forwards;
+}
+
+@keyframes line-anim {
+  from {
+    stroke-dashoffset: 550px;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
